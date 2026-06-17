@@ -1,5 +1,5 @@
 import React from 'react';
-import { Product } from '../data/types';
+import type { Product } from '../data/types';
 import { usePos } from '../context/PosContext';
 
 interface ProductCardProps {

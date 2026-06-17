@@ -1,5 +1,6 @@
-import React, { createContext, useContext, useReducer, ReactNode } from 'react';
-import { Product, CartItem, PosAction, PosState } from '../data/types';
+import React, { createContext, useContext, useReducer } from 'react';
+import type { ReactNode } from 'react';
+import type { PosAction, PosState } from '../data/types';
 
 const initialState: PosState = {
   cart: JSON.parse(localStorage.getItem('pos_cart') || '[]'),
